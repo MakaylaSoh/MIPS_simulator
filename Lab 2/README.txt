@@ -1,5 +1,3 @@
-Lab 2 in CPE 315 (Computer Architecture)
-
 Purpose: Read in assembly language (MIPS) and transform it into machine language (bits)!
 
 Input: a program in assembly langauge (MIPS)
