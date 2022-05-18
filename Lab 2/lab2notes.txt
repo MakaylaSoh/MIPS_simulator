@@ -1,0 +1,27 @@
+CPE315 lab2
+lab 2 description: 
+Write a java program that reads and translates a asm file to binary!! YAY :D
+
+1. R type instructions
+- 6bit op, 5bit rs, 5bit rt, 5bit rd, 5bit shamt, 6bit funct
+- op is always 000000
+- rs, rt, and rd represent the registers. registers correspond to a number
+- if there are no shift amount then shamt is 00000
+
+2. I type instructions
+- 6bit op, 5bit rs, 5bit rt, 16bit constant or address
+- op is defined in reference
+- rs is the source, rt is the destination, constant is the amount adding onto the value in rs
+
+3. J type instructions
+- only have 6op, rest is address
+
+Data Stuctures?
+hashmaps
+- need an arraylist to hold the labels' address 
+  (address will be of the instruction AFTER the label)
+- ignore comments!
+- to hold the registers and instructions
+- to hold R instructions fucnt (opcode is always 0)
+- to hold I instructions
+- to hold J instructions
