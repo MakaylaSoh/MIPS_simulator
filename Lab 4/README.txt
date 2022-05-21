@@ -1,6 +1,4 @@
-Lab 4 in CPE 315 (Computer Architecture)
-
-Building off lab 2 and 3
+Demonstrating Pipelineing in Computer Architectures
 
 Purpose: Read in assembly language and print out the pc and pipeline stages (4 stage pipeline). Take into account stalls and squashes.
    There is an interactive part where the following commands can be entered:
