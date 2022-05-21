@@ -1,13 +1,14 @@
 /*
 * Makayla Soh
-* File name: lab3_modified.java
-* Description: >_<
+* File name: AssemblyExecution.java
+* Description: Program takes in an assembly program and parses then executes the instructions.
+*   Takes into account instruction type. There is an interactive part or the program can accept and run a script.
 */
 
 import java.io.*;
 import java.util.*;
 
-public class Lab3_Modified
+public class AssemblyExecution
 {
     static HashMap<String, Integer> labels = new HashMap<String, Integer>();
     static ArrayList<Instructions> instruct = new ArrayList<Instructions>();
