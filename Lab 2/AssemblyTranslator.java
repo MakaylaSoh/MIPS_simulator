@@ -1,6 +1,6 @@
 /*
 * Makayla Soh
-* File name: lab2.java
+* File name: AssemblyTranslator.java
 * Description: Reads in a program in assembly langauge. Uses the MIPS instruction set architecture to convert the assembly language into machine langauge (binary).
 *   Parses and converts based off of instruction types (I, J, R). Output is a string to the console representing the machine langauge.
 */
@@ -10,7 +10,7 @@ import java.util.*;
 
 import javax.lang.model.util.ElementScanner14;
 
-public class lab2
+public class AssemblyTranslator
 {
 
     // Function: getInst()
