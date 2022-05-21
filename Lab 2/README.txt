@@ -1,4 +1,6 @@
-Purpose: Read in assembly language (MIPS) and transform it into machine language (bits)!
+Assembly Langauge to Machine Language
+
+Purpose: Read in assembly language and transform it into machine language (bits) using MIPS instruction set architecture.
 
 Input: a program in assembly langauge (MIPS)
  - reads labels
