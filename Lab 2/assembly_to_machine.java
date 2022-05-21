@@ -1,7 +1,8 @@
 /*
 * Makayla Soh
 * File name: lab2.java
-* Description: :D
+* Description: Reads in a program in assembly langauge. Uses the MIPS instruction set architecture to convert the assembly language into machine langauge (binary).
+*   Parses and converts based off of instruction types (I, J, R). Output is a string to the console representing the machine langauge.
 */
 
 import java.io.*;
@@ -73,6 +74,10 @@ public class lab2
     }
 
 
+    // Function: getBinInst()
+    // Description: Takes in an array that holds the instructions, each instruction is an array itself of the different instrution parts.
+    //   Also takes in the lables (with their addresses) and the array where the binary instructions will be stored. Depending on the type of 
+    //   instruction, translates the instruction to the machine language. Uses hashmaps to get the associated binary "codes".
     public static void getBinInst(ArrayList<String[]> instParts, HashMap<String, Integer> labels, ArrayList<String> binInst)
     {
         //hashmaps for registers and instructions
@@ -195,6 +200,10 @@ public class lab2
 
 
 
+    // Function: getBinNum()
+    // Description: Takes in a binary number as a string and the size the binary number needs to be extended to.
+    //   This just ensures that the binary number is representing the correct number of bytes. The values of 
+    //   the input number does not change.
     public static String getBinNum(String num, int extend)
     {
         int temp = Integer.valueOf(num);
@@ -214,6 +223,9 @@ public class lab2
 
 
 
+    // Function: main()
+    // Description: Passes the input argument (assembly languge file) into getInst to parse the input into the instruction parts.
+    //   Then calls getBinInst to translate the instructions into machine language, and then prints out the result.
     public static void main(String args[]) throws FileNotFoundException
     {
         ArrayList<String[]> instParts = new ArrayList<String[]>();
@@ -227,7 +239,7 @@ public class lab2
         getBinInst(instParts, labels, binInst);
 
         //print elements in binInst
-        //for(String i : binInst)
-            //System.out.println(i);
+        for(String i : binInst)
+            System.out.println(i);
     }
 }
