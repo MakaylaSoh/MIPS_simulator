@@ -1,6 +1,4 @@
-Lab 3 in CPE 315 (Computer Architecture)
-
-A continuation of lab 2. 
+Execute MIPS Assembly Code
 
 Purpose: To read in an assembly langauge MIPS file and execute the instructions. Be able to run the whole thing and have 
    and interactive portion. The interactive portion allows for stepping, showing registers, display memory (just set 
