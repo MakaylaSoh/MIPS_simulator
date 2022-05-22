@@ -1,13 +1,14 @@
 /*
 * Makayla Soh
-* File name: lab4.java
-* Description: >_<
+* File name: PipeliningDisplay.java
+* Description: Read in an assembly file. Execute and display the instrcution in the correct pipeline stage of a 
+*   four stage pipeline. Keep track of both the PC and the pipeline. Correctly sqaush and stall depending on the instruction.
 */
 
 import java.io.*;
 import java.util.*;
 
-public class lab4
+public class PipeliningDisplay
 {
     static HashMap<String, Integer> labels = new HashMap<String, Integer>();
     static ArrayList<Instructions> instruct = new ArrayList<Instructions>();
